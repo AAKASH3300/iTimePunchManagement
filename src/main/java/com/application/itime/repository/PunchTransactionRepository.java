@@ -1,9 +1,9 @@
 package com.application.itime.repository;
 
-import com.application.itime.persistance.entity.Shift;
+import com.application.itime.persistance.entity.PunchTransaction;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface ShiftRepository extends JpaRepository<Shift, Integer> {
+public interface PunchTransactionRepository extends JpaRepository<PunchTransaction,Integer> {
 }
