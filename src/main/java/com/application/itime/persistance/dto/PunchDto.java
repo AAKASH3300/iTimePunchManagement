@@ -1,9 +1,9 @@
 package com.application.itime.persistance.dto;
 
+
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
-
 
 @Data
 @Getter

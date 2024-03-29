@@ -13,7 +13,7 @@ public class PunchTransactionDto {
 
     private String punchOut;
 
-    private String punchType;
+    private String nextPunchType;
 
     private String workingHours;
 

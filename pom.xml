@@ -82,7 +82,7 @@
 		</dependency>
 
 		<!--		SWAGGER END			-->
-    </dependencies>
+	</dependencies>
 
 	<build>
 		<plugins>

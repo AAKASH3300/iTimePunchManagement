@@ -9,7 +9,7 @@ import java.sql.Time;
 
 @Component
 public class ShiftMapper {
-    public static Shift modelToEntity(ShiftDto shiftModel) {
+    public Shift modelToEntity(ShiftDto shiftModel) {
 
         Shift shift = new Shift();
 

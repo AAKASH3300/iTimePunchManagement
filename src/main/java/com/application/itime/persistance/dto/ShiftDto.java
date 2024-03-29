@@ -10,9 +10,8 @@ import lombok.Setter;
 @Setter
 public class ShiftDto {
 
-    @Pattern(regexp = "^[a-zA-Z0-9_]+$", message = "Special characters not allowed !")
-    private String shiftName;
 
+    private String shiftName;
     private String shiftType;
     private String startTime;
     private String endTime;

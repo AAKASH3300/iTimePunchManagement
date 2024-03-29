@@ -1,6 +1,7 @@
 package com.application.itime.persistance.conversion;
 
 import com.application.itime.enumeration.EnumPunchType;
+import com.application.itime.persistance.dto.PunchTransactionDto;
 import com.application.itime.persistance.entity.Employee;
 import com.application.itime.persistance.entity.Punch;
 import com.application.itime.persistance.dto.PunchDto;
@@ -16,7 +17,7 @@ public class PunchMapper {
 
         Punch punch = new Punch();
 
-        punch.setPunchTime(new Time(System.currentTimeMillis()));
+        punch.setPunchTime(new Timestamp(System.currentTimeMillis()));
         punch.setPunchType(EnumPunchType.valueOfPunchType(punchModel.getPunchType()));
         punch.setEmpCode(employee);
 
@@ -35,5 +36,15 @@ public class PunchMapper {
         return punchModel;
     }
 
+
+    public PunchTransactionDto statusEntityToModel(String punchIn,String punchOut,String punchType,String workingHours){
+        PunchTransactionDto punchModel = new PunchTransactionDto();
+
+        punchModel.setPunchIn(punchIn);
+        punchModel.setPunchOut(punchOut);
+        punchModel.setNextPunchType(punchType);
+        punchModel.setWorkingHours(workingHours);
+        return punchModel;
+    }
 
 }

@@ -1,4 +1,8 @@
 package com.application.itime.service;
 
-public interface ShiftService {
+import com.application.itime.persistance.dto.ShiftDto;
+
+public interface ShiftService  {
+    String addShift(ShiftDto shiftDto);
+
 }

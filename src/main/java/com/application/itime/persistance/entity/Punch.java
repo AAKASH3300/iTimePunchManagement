@@ -7,7 +7,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.sql.Time;
 import java.sql.Timestamp;
 
 @Entity
@@ -22,7 +21,7 @@ public class Punch {
     private Integer id;
 
     @Column(name = "punch_time", length = 25)
-    private Time punchTime;
+    private Timestamp punchTime;
 
     @Enumerated(EnumType.STRING)
     @Column(name = "punch_type", length = 10)
@@ -34,6 +33,7 @@ public class Punch {
             referencedColumnName = "emp_code"
     )
     private Employee empCode;
+
 
 
 }
